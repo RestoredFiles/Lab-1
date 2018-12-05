@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()                      //149162536496481100
+{
+	int k,i,b,S,c,n,a;
+	cin>>k;
+	i=0;
+	S=0;
+	while(S<k)
+	{
+	    i=i+1;
+	    b=i*i;
+	    c=1;
+	    n=10;
+	    while(b/n>0)
+	    {
+         n=n*10;
+         c=c+1;
+        }
+        S=S+c;
+	}
+    S=S-c;
+    n=n/10;
+    while(S<k)
+    {
+    a=(b/n)%10;
+    n=n/10;
+    S=S+1;
+    }
+    cout<<a;
+
+}
