@@ -1,0 +1,29 @@
+#include <iostream>
+
+#include <cmath>
+
+using namespace std;
+
+int main()
+
+{
+
+int n;
+
+cin>>n;
+
+for(int a=3;a<=n;a++)
+
+for(int b=3;b<=n;b++)
+
+for(int c=3;c<=n;c++)
+
+if(a*a+b*b==c*c){
+
+cout<<a<<' '<<b<<' '<<c<<'\n';
+
+a=a+1;
+
+}
+
+}
