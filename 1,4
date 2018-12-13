@@ -1,0 +1,33 @@
+#include <iostream>
+
+#include <cmath>
+
+using namespace std;
+
+int main()
+
+{
+
+int n,max;
+
+cin>>n;
+
+max=0;
+
+while (n!=0)
+
+{
+
+if((n%8)%2!=0)
+
+if(n%8>max)
+
+max=n%8;
+
+n=n/8;
+
+}
+
+cout<<max;
+
+}
