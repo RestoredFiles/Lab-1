@@ -1,0 +1,45 @@
+#include <iostream>
+
+#include <math.h>
+
+using namespace std;
+
+int main()
+
+{
+
+int N, c, min = 10, n = 10; //623282-->638
+
+cin >> N;
+
+c = N;
+
+while (c > 0)
+
+{
+
+if (c % 10 < min)
+
+min = c % 10;
+
+c = c / 10;
+
+}
+
+while (N / n > 0)
+
+if (N / n % 10 == min)
+
+N = N / (n * 10)*n + N%n;
+
+else n = n * 10;
+
+if (N % 10 == min)
+
+N = N / 10;
+
+cout << N;
+
+system("pause");
+
+}
